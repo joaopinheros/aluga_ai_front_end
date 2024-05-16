@@ -1,0 +1,68 @@
+/* Estilo geral do banner */
+.banner-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+/* Conteúdo do banner */
+.banner-content {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  padding-left: 250px; /* Move todo o conteúdo para a direita */
+}
+
+/* Título do banner */
+.banner-content .title {
+  font-family: 'Inter', sans-serif;
+  font-size: 110px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Descrição do banner */
+.banner-content .description {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6D6A6A;
+}
+
+/* Imagem do banner */
+.banner-content .banner-image {
+  width: 75%;
+  height: auto;
+  float: right;
+  margin-right: 20px;
+}
+
+/* Botões de seleção */
+
+.banner-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    margin-left: -250px; /* Volta os botões para a posição original pois joguei todo o container pra frente */
+  }
+  
+.banner-buttons button {
+  background-color: #fff;
+  border: none;
+  padding: 13px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 100% ;
+}
+
+.banner-buttons button.active {
+    border: solid 1px #000;
+}

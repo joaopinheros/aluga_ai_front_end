@@ -1,0 +1,95 @@
+/* Fazendo o CSS do Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 12px; /* Aumentando o padding para dar mais espaço nas laterais */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Estilos para a logo */
+.logo img {
+  width: 65px;
+  height: auto;
+}
+
+/* Estilos para os dados (links) */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #868080;
+  text-decoration: none;
+}
+
+/* Adiciona uma margem maior entre a logo e os links de navegação */
+.logo + nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para os botões */
+.auth-buttons {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+.button-login {
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid black; /* Adiciona a borda */
+  border-radius: 30px; /* Adiciona o raio de borda */
+}
+
+.button-login:hover{
+  color: black;
+  background-color: white;
+  border: 1px solid black; /* Adiciona a borda */
+  border-radius: 30px; /* Adiciona o raio de borda */
+}
+
+.button-register {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid black; 
+  border-radius: 30px; 
+}
+
+.button-register:hover { 
+  color: #ffffff; 
+  background-color: #000000; 
+  border: 1px solid black; /* Adiciona a borda ao placeholder */
+  border-radius: 30px; /* Adiciona o raio de borda ao placeholder */
+}
+
+.auth-buttons button {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px; /* Ajustando o tamanho da fonte */
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Estilos para os links dentro dos botões */
+.auth-buttons button a {
+  color: inherit;
+  text-decoration: none; /* Remove sublinhado */
+  display: block; /* Faz com que o link ocupe todo o botão */
+  text-align: center; /* Centraliza o texto */
+}
+

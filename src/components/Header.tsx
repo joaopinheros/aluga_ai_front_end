@@ -12,7 +12,7 @@ export const Header = () => {
 
       <nav>
         <ul>
-          <li><Link to="">Anuncie Seu Veiculo</Link></li>
+          <li><Link to="/register-vehicle">Anuncie Seu Veiculo</Link></li>
           <li><Link to="">Alugue Um Veiculo</Link></li>
           <li><Link to="">Fale Conosco</Link></li>
         </ul>

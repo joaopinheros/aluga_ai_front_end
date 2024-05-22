@@ -1,12 +1,12 @@
 /* Estilo geral do banner */
 .banner-container {
-  width: 100vw;
-  height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  margin-top: 15px;
 }
 
 /* Conteúdo do banner */
@@ -14,55 +14,54 @@
   flex: 1;
   padding: 20px;
   text-align: left;
-  padding-left: 250px; /* Move todo o conteúdo para a direita */
+  margin-left: 20px;
 }
 
 /* Título do banner */
 .banner-content .title {
   font-family: 'Inter', sans-serif;
-  font-size: 110px;
+  font-size: 64px;
   font-weight: bold;
   color: #000;
 }
 
 /* Descrição do banner */
 .banner-content .description {
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   color: #6D6A6A;
 }
 
 /* Imagem do banner */
 .banner-content .banner-image {
-  width: 75%;
-  height: auto;
+  max-width: 50%; /* Defina a largura máxima para 50% do contêiner */
+  height: auto; /* Deixe a altura ajustável para manter a proporção */
   float: right;
   margin-right: 20px;
 }
 
 /* Botões de seleção */
-
 .banner-buttons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 20px;
-    margin-left: -250px; /* Volta os botões para a posição original pois joguei todo o container pra frente */
-  }
-  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: -20px;
+}
+
 .banner-buttons button {
   background-color: #fff;
   border: none;
-  padding: 13px 15px;
+  padding: 0.5px 1.5px;
   margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border-radius: 100% ;
+  border-radius: 100%;
 }
 
 .banner-buttons button.active {
-    border: solid 1px #000;
+  border: solid 1px #000;
 }

@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 50px;
   padding: 0 12px; /* Aumentando o padding para dar mais espaço nas laterais */
   box-sizing: border-box;
   width: 100%;
@@ -12,7 +12,7 @@ header {
 
 /* Estilos para a logo */
 .logo img {
-  width: 65px;
+  width: 45px;
   height: auto;
 }
 
@@ -30,7 +30,7 @@ nav li {
 
 nav a {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   color: #868080;
   text-decoration: none;
@@ -47,6 +47,7 @@ nav a {
 .auth-buttons {
   display: flex;
   gap: 20px; /* Espaçamento entre os botões */
+
 }
 
 .button-login {
@@ -79,7 +80,7 @@ nav a {
 
 .auth-buttons button {
   font-family: 'Inter', sans-serif;
-  font-size: 12px; /* Ajustando o tamanho da fonte */
+  font-size: 11px; /* Ajustando o tamanho da fonte */
   font-weight: bold;
   padding: 8px 16px;
   cursor: pointer;

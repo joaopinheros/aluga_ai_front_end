@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom"
-import { Banner } from "../components/Banner"
+import { VehicleDetails } from "../components/VehicleDetails"
 import Header from "../components/Header"
-export const Home = () => {
+
+
+export const CarsDetails = () => {
 
     return(
         <div>
@@ -9,7 +10,7 @@ export const Home = () => {
                 <Header/>
             </div>
             <div>
-                <Banner/>
+                <VehicleDetails/>
             </div>
         </div>
         

@@ -1,0 +1,199 @@
+/* VehicleDetails.css */
+
+.Vehicle-Details {
+  display: flex;
+  align-items: flex-start; /* Para alinhar os elementos ao topo */
+  padding: 20px;
+  
+}
+
+.Vehicle-Details img {
+  width: 40%; /* Reduzindo a largura da imagem */
+  max-height: 300px;
+  object-fit: cover;
+  margin-right: 20px; /* Adicionando espaço entre a imagem e o box */
+}
+
+.boxVehicle {
+  width: 50%; /* Reduzindo a largura do box */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px; /* Adicionando espaço entre a imagem e o box */
+}
+
+
+.model {
+  font-size: 20px; /* Reduzindo o tamanho da fonte do modelo */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px; /* Aumentando o tamanho da fonte do preço */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column; /* Alterando para uma disposição em coluna */
+  align-items: center; /* Centralizando os botões */
+  margin-top: 20px;
+}
+
+.reservar,
+.adicionarLista {
+  width: 70%; /* Definindo uma largura para os botões */
+  margin-bottom: 10px; /* Adicionando espaço entre os botões */
+  border-radius: 20px;
+}
+
+.description-details-vehicle {
+  display: flex;
+  flex-direction: column; /* Alterando para uma disposição em coluna */
+  margin-top: 20px;
+}
+
+
+.Vehicle-Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Vehicle-Details img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.boxVehicle {
+  max-height: 700px;
+  max-width: 500px;
+  background-color: #ffffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.model {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.localization-vehicle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dataInicio,
+.dataFim {
+  display: flex;
+  align-items: center;
+}
+
+.dataInicio span,
+.dataFim span {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.input-date {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.acoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservar:hover {
+  background-color: #0056b3;
+}
+
+.adicionarLista {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adicionarLista:hover {
+  background-color: #56636b;
+}
+
+.description-details-vehicle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.details-car,
+.details-color,
+.details-fabrication,
+.details-fuel,
+.details-door,
+.details-mileage,
+.details-localization {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.details-car img,
+.details-color img,
+.details-fabrication img,
+.details-fuel img,
+.details-door img,
+.details-mileage img,
+.details-localization img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.details-car span,
+.details-color span,
+.details-fabrication span,
+.details-fuel span,
+.details-door span,
+.details-mileage span,
+.details-localization span {
+  font-size: 12px;
+  color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

@@ -1,0 +1,132 @@
+
+  
+  /* Container principal que envolve o texto e o formulário */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px;
+    margin-left: 36px;
+    margin-right: 54px;
+    gap: 20px; /* Espaçamento */
+  }
+  
+  /* Container para os textos (h1 e span) */
+  .text-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  /* Estilo para o h1 */
+  .text-h1 h1 {
+    font-size: 40px; /* Aumentado de 24px para 28px */
+    margin-top: 150px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;  }
+  
+  /* Estilo para o span */
+  .text-span span {
+    font-size: 14px; /* Aumentado de 14px para 16px */
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Container para o formulário */
+  .form-container {
+    flex: 1;
+    max-width: 600px; /* Aumentado de 600px para 700px */
+    border-radius: 10px;
+    box-shadow: 4px white;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 70px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+/* 0px - deslocamento horizontal
+   4px - deslocamento vertical
+   10px - raio de desfoque
+   rgba(0, 0, 0, 0.1) - cor da sombra com 10% de opacidade */
+
+  }
+  
+  /* Estilo para o formulário */
+  .register-car-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Cada div dentro do formulário */
+  .register-car-form > div {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para os labels dos inputs */
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:normal;
+  }
+  
+  /* Estilo para os inputs, textarea e checkbox */
+  .form-input,
+  .form-textarea,
+  .form-checkbox {
+    width: 100%; /* Aumentado de 100% para 110% */
+    padding: 10px; /* Aumentado de 8px para 10px */
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  /* Estilo específico para a textarea */
+  .form-textarea {
+    height: 100px; /* Aumentado de 80px para 100px */
+    resize: vertical;
+  }
+  
+  /* Estilo específico para o checkbox */
+  .form-checkbox {
+    width: auto;
+  }
+
+  
+  
+  /* Estilo para o botão de submit */
+  .submit-button {
+
+    margin-top: 140px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    max-height: 36px;
+    width: 120px;
+
+  }
+  
+  /* Estilo do botão de submit ao passar o mouse */
+  .submit-button:hover {
+    background-color: #333;
+  }
+  
+  /* Estilos específicos para dispositivos móveis */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .text-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .register-car-form > div {
+      width: 100%;
+    }
+  }
+  

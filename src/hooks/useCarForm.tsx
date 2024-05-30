@@ -23,6 +23,10 @@ export const useCarForm = () => {
     },
   });
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
+
   const handleChange = (
     event: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
@@ -44,5 +48,32 @@ export const useCarForm = () => {
     }
   };
 
-  return { car, handleChange };
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    setLoading(true);
+    setError(null);
+    setSuccess(false);
+
+    try {
+      const response = await fetch('/api/cars', { // Atualize a URL conforme necessário
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(car),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit car details');
+      }
+
+      setSuccess(true);
+    } catch (error: any) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return { car, handleChange, handleSubmit, loading, error, success };
 };

@@ -4,13 +4,7 @@ import "../style/RegisterCar.css";
 import Header from "../components/Header";
 
 export const RegisterCar: React.FC = () => {
-  const { car, handleChange } = useCarForm();
-
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    // Lógica para enviar os dados do carro
-    console.log("Car submitted:", car);
-  };
+  const { car, handleChange, handleSubmit } = useCarForm();
 
   return (
     <div>
